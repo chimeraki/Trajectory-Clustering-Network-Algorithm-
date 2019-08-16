@@ -1,2 +1,1 @@
-# Parkinsons
-Find parkinson's subtype through network analysis techniques from the PPMI dataset
+https://arxiv.org/abs/1906.05338
