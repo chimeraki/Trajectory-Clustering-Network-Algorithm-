@@ -1,8 +1,8 @@
-This is a novel network based algorithm for the identificationof subtypes (clusters) in heterogenous and temporal data. the clusters are not just on similarity in variables, but ALSO similarity in the 'trajectory' (temporal evolution patterns of these variables). We apply this to parkinson's, but the can be extended to any other heterogenous and longitudinal dataset. 
+We present a novel network-based algorithm for the identification of subtypes in heterogenous and temporal disease datasets, applied to the PPMI Parkinson's dataset.
+
+Chronic medical conditions show substantial heterogeneity in their clinical features and progression. We develop the novel data-driven, network-based Trajectory Profile Clustering (TPC) algorithm for 1) identification of disease subtypes and 2) early prediction of subtype/disease progression patterns. TPC is an easily generalizable method that identifies subtypes by clustering patients with similar disease trajectory profiles, based not only on PD variable severity, but also on their complex interaction and evolution patterns. TPC is derived from bipartite networks that connect patients to disease variables. Applying our TPC algorithm to a Parkinson’s disease dataset, we identify 3 distinct subtypes/patient clusters, each with a characteristic progression profile. We show TPC predicts disease subtype 4 years in advance with 82% accuracy for a longitudinal test cohort. Other types of data such as genetic data can be integrated seamlessly and weighted differently, if desired, in the TPC algorithm.
+
+We apply this to parkinson's, but the can be extended to any other heterogenous and longitudinal dataset. 
 Algorithm for subtype identification based on: https://arxiv.org/abs/1906.05338
 Data used: Parkinson's PPMI data including clinical, genetic and demographic data from Parkinson's patients.
-The BL_V0x files are the data about values of symptoms for individuals (charecterized by patient number) in year x of having parkinsons.
-
-
-
-Our algorithm identifies subtypes and has early-predictive power. We were able to accurately predict Parkinson's subtype in test patients 4 years in advance with 74% accuracy.
+The BL_V0x json files are the data about values of symptoms for individuals (charecterized by patient number) in year x. All files contain copies of the baseline data
